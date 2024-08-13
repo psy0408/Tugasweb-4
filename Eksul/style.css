@@ -1,0 +1,118 @@
+/* Gaya Umum */
+body {
+    background-color: #F5DEB3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFBF00;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+fieldset {
+    border: 2px solid #FFBF00;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+legend {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: #FFBF00;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="date"], input[type="number"], input[type="tel"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #3CB371;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #347C17;
+}
+
+footer {
+    background-color: #7C9D8E;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.biodata, .alamat, .kontak, .ekskul, .foto {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.biodata, .alamat, .kontak, .foto {
+    margin-top: 20px;
+}
+
+.biodata label, .alamat label, .kontak label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+}
+
+.gender-options input[type="radio"]{
+    margin-right: 5px;
+}
+.gender-options input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+.gender-options label {
+    margin-right: 20px;
+}

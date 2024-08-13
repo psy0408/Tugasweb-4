@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas_4_Ekskul</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="logo">
+            <img src="Aufha_Pasya_-_XI_RPL_1-removebg-preview.png" alt="Logo">
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Formulir pendaftaran ekskul</h1>
+        </header>
+    </section>
+
+    <section>
+        <div class="biodata">
+            <fieldset>
+                <legend><h4><i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Biodata</i></h4></legend>
+                <label for="fname">Nama Lengkap:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Masukan Nama Lengkap"><br>
+                <label for="flahir">Tempat Lahir:</label><br>
+                <input type="text" id="flahir" name="flahir" placeholder="Masukan Tempat Lahir"><br>
+                <label for="ftanggal">Tanggal Lahir:</label><br>
+                <input type="date" id="ftanggal" name="ftanggal"><br>
+                <label for="fusia">Usia:</label><br>
+                <input type="number" min="13" max="21"><br>
+                <label for="fkelam">Jenis Kelamin</label>
+                <div class="gender-options">
+                <input type="radio" id="flak" name="fkelam" value="Laki-Laki">
+                <label for="flak">Laki-Laki</label><br>
+                <input type="radio" id="fper" name="fkelam" value="Perempuan">
+                <label for="fper">Perempuan</label><br>
+            </div>
+                <label for="agama">Agama:</label><br>
+                <select id="agama" name="agama">
+                    <option value=""></option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen Protestan">Kristen Protestan</option>
+                    <option value="Kristen Katolik">Kristen Katolik</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Khonghucu">Khonghucu</option>
+                    <option value="Penghayat Kepercayaan">Penghayat Kepercayaan</option>
+                </select><br>
+                <label for="fkelas">Kelas:</label><br>
+                <input type="text" id="fkelas" name="fkelas"><br>
+            </fieldset>
+        </form>
+    </div>
+    </section>
+    <section>
+        <div class="alamat">
+            <fieldset>
+                <legend><h4><i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Alamat</i></h4></legend>
+                <label for="falam">Alamat Lengkap:</label><br>
+                <textarea name="falam" rows="1" cols="21"></textarea><br>
+                <label for="frt">RT:</label><br>
+                <input type="number" min="01"><br>
+                <label for="frw">RW:</label><br>
+                <input type="number" min="01"><br>
+                <label for="fdesa">Desa / Kelurahan:</label><br>
+                <input list="fdesa" name="fdesa">
+                 <datalist id="fdesa">
+                    <option value="Cipada">Cipada</option>
+                    <option value="Jambudipa">Jambudipa</option>
+                    <option value="Pada Asih">Pada Asih</option>
+                    <option value="Pasir Halang">Pasir Halang</option>
+                    <option value="Pasir Langu">Pasir Langu</option>
+                    <option value="Tugu Mukti">Tugu Mukti</option>
+                    <option value="Sadang Mekar">Sadang Mekar</option>
+                </datalist>
+            </input><br>
+                <label for="fkec">Kecamatan:</label><br>
+                <input list="fkec" name="fkec">
+                 <datalist id="fkec">
+                    <option value="Cisarua">Cisarua</option>
+                    <option value="Parongpong">Parongpong</option>
+                    <option value="Lembang">Lembang</option>
+                    <option value="Ngamprah">Ngamprah</option>
+                    <option value="Padalarang">Padalarang</option>
+                    <option value="Cipatat">Cipatat</option>
+                    <option value="Cikalong Wetan">Cikalong Wetan</option>
+                    <option value="Batujajar">Batujajar</option>
+       </datalist>
+     </input><br>
+                <label for="fkab">Kabupaten / Kota:</label><br>
+                <input list="fkab" name="fkab">
+                 <datalist id="fkab">
+                    <option value="Kab. Bandung Barat">Kab. Bandung Barat</option>
+                    <option value="Kab. Bandung">Kab. Bandung</option>
+                    <option value="Kab. Cianjur">Kab. Cianjur</option>
+                    <option value="Kab. Sumedang">Kab. Sumedang</option>
+                    <option value="Kota Bandung">Kota Bandung</option>
+                    <option value="Kota Cimahi">Kota Cimahi</option>
+                </datalist></input><br>
+                <label for="fpos">Kode Pos:</label><br>
+                <input type="text" id="fpos" name="fpos"><br>
+            </fieldset>
+        </form>
+    </div>
+    </section>
+    <section>
+        <div class="kontak">
+        <fieldset>
+            <legend><h4><i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Kontak</i></h4></legend>
+            <label for="fkon">No.Telp:</label><br>
+            <input type="tel" id="fkon" name="fkon"><br>
+            <label for="fmail">Email:</label><br>
+            <input type="email" id="fmail" name="fmail"><br>
+        </fieldset>
+        <fieldset>
+            <legend><h4><i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Akun</i></h4></legend>
+            <label for="fuser">Username:</label><br>
+            <input type="text" id="fuser" name="fuser" required><br>
+            <label for="fpas">Password:</label><br>
+            <input type="password" id="fpas" name="fpas" required><br>
+            <label for="fpasko">Konfirmasi Password:</label><br>
+            <input type="password" id="fpasko" name="fpasko" required><br>
+        </fieldset>
+    </form>
+    </div>
+    </section>
+    <section>
+    <fieldset>
+        <div class="ekskul">
+        <legend><h4><i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Ekstrakulikuler</i></h4></legend>
+        <div class="checkbox-group">
+        <input type="checkbox" id="basket" name="ekskul[]" value="Basket">
+                <label for="basket">Basket</label><br>
+                <input type="checkbox" id="futsal" name="ekskul[]" value="Futsal">
+                <label for="futsal">Futsal</label><br>
+                <input type="checkbox" id="pramuka" name="ekskul[]" value="Pramuka">
+                <label for="pramuka">Pramuka</label><br>
+                <input type="checkbox" id="paskibra" name="ekskul[]" value="Paskibra">
+                <label for="paskibra">Paskibra</label><br>
+                <input type="checkbox" id="irma" name="ekskul[]" value="Irma">
+                <label for="irma">Irma</label><br>
+                <input type="checkbox" id="sispakala" name="ekskul[]" value="Sispakala">
+                <label for="sispakala">Sispakala</label><br>
+                <input type="checkbox" id="volly" name="ekskul[]" value="Volly">
+                <label for="volly">Volly</label><br>
+                <input type="checkbox" id="oscar" name="ekskul[]" value="Berenang">
+                <label for="oscar">Berenang</label><br>
+                <input type="checkbox" id="pencak_silat" name="ekskul[]" value="Pencak Silat">
+                <label for="pencak_silat">Pencak Silat</label><br>
+                <input type="checkbox" id="taekwondo" name="ekskul[]" value="Taekwondo">
+                <label for="taekwondo">Taekwondo</label><br>
+                <input type="checkbox" id="karate" name="ekskul[]" value="Karate">
+                <label for="karate">Karate</label><br>
+                <input type="checkbox" id="codax" name="ekskul[]" value="E-Sport">
+                <label for="codax">E-Sport</label><br>
+                <input type="checkbox" id="ai" name="ekskul[]" value="AI">
+                <label for="ai">AI (Artificial Intelligence)</label><br>
+                <input type="checkbox" id="design" name="ekskul[]" value="Design">
+                <label for="design">Design</label><br>
+                <input type="checkbox" id="pmr" name="ekskul[]" value="PMR">
+                <label for="pmr">PMR (Palang Merah Remaja)</label><br>
+                <input type="checkbox" id="pks" name="ekskul[]" value="PKS">
+                <label for="pks">PKS (Patroli Keamanan Sekolah)</label><br>
+                <input type="checkbox" id="dance" name="ekskul[]" value="Dance">
+                <label for="dance">Dance</label><br>
+    </div>
+</fieldset>
+</div>
+</section>
+<section>
+<div class="foto">
+<fieldset>
+    <legend style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><h4><i>Upload Persyaratan</i></h4></legend>
+    <label for="pas_foto">Upload Pas Foto 3x4:</label>
+    <input type="file" id="pas_foto" name="pas_foto"><br>
+    <label for="ktp">Kartu Tanda Pelajar:</label>
+    <input type="file" id="ktp" name="ktp"><br>
+</fieldset>
+</div>
+</section>
+<section>
+    <div class="submit">
+<input type="submit" id="submit" value="Kirim">
+<input type="reset" id="reset" value="Reset"><br>
+    </div>
+</section>
+</form>
+
+<footer>
+<p><b>Created by Aufha Pasya &copy; 2024</b></p>
+<p><b>All Right Reserve!!</b></p>
+</footer>
+</body>
+</html>
